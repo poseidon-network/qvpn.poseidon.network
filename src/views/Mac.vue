@@ -23,7 +23,7 @@
       </div>
       <div class="wrap">
         <h3><span class="number">4</span>Sign up your Disney+ Account</h3>
-        <p class="info">Go to <a href="https://www.disneyplus.com/home" target="_blank">Disney+ Account</a> and sing up account.<br/>You can join our community to try a Disney+ free trail.</p>
+        <p class="info">Go to <a href="https://www.disneyplus.com/home" target="_blank">Disney+ Account</a> and sign up account.<br/>You can join our community to try a Disney+ free trail.</p>
       </div>
       <div class="done"><h4>🎉 ALL DONE! ENJOY.</h4></div>
     </div>

@@ -29,7 +29,7 @@
       <div class="wrap">
         <h3><span class="number">6</span>Download Disney+ App</h3>
         <div class="caution">You will need to have a United States apple account to download the app.</div>
-        <p class="info">Go to <a href="https://apps.apple.com/us/app/disney/id1446075923" target="_blank">Apple store</a> download Disney+ and sing up an account.<br/>If you’d like to take a trial of watching Disney+, our community supports you for Disney + free trial. Come join us!</p>
+        <p class="info">Go to <a href="https://apps.apple.com/us/app/disney/id1446075923" target="_blank">Apple store</a> download Disney+ and sign up an account.<br/>If you’d like to take a trial of watching Disney+, our community supports you for Disney + free trial. Come join us!</p>
       </div>
       <div class="done"><h4>🎉 ALL DONE! ENJOY.</h4></div>
     </div>
