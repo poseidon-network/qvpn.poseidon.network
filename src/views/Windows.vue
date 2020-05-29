@@ -1,6 +1,6 @@
 <template>
   <div class="view windows">
-    some Windows bullshite here.
+    some Windows bullshit here.
   </div>
 </template>
 

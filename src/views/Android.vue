@@ -1,6 +1,6 @@
 <template>
   <div class="view android">
-    some android bullshite here.
+    some android bullshit here.
   </div>
 </template>
 
