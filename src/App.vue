@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <a href="#" id="note">
+    <a href="https://github.com/poseidon-network/qlauncher-linux" target="_blank" id="note">
      💝 Earn rewards by helping others to watch Dinesy+ <div class="btn">Collect your gift 🎁</div>
     </a>
     <div id="junbo">
       <img src="./assets/title.svg" alt="" class="title">
-      <a href="#" class="purple-btn">Unblock Disney+ Now</a>
+      <a href="#nav" class="purple-btn" id="scroll" v-smooth-scroll>Unblock Disney+ Now</a>
       <span class="poweredby">⚡ by Poseidon-Network</span>
       <img src="./assets/blob-p.svg" alt="" class="blob-p">
       <img src="./assets/blob-g.svg" alt="" class="blob-g">
@@ -21,7 +21,7 @@
     <div class="giveaway">
       <h3>Free Disney+ account Giveaway!</h3>
       <h4>Join our community to get a free Disney+ account</h4>
-      <a href="#" class="purple-btn">Join Telegram</a>
+      <a href="" class="purple-btn" id="telegram" v-on:click="telegramURL">Join Telegram</a>
       <div class="bg-elements">
         <span class="triangle triangle-1"></span>
         <span class="triangle triangle-2 grey"></span>
@@ -37,6 +37,29 @@
     </footer>
   </div>
 </template>
+
+<script>
+import $ from 'jquery'
+import vueSmoothScroll from 'vue2-smooth-scroll'
+import Vue from 'vue'
+Vue.use(vueSmoothScroll)
+
+export default {
+  name: 'telegramURL',
+  methods: {
+    telegramURL () {
+      if (window.navigator.language === 'zh-CN' || window.navigator.language === 'zh-TW') {
+        $('#telegram').attr('href', 'https://t.me/QQQ_Poseidon_zh')
+        window.location.href = 'https://t.me/QQQ_Poseidon_zh'
+      } else {
+        $('#telegram').attr('href', 'https://t.me/QQQ_Poseidon_En')
+        window.location.href = 'https://t.me/QQQ_Poseidon_En'
+      }
+    }
+  }
+}
+
+</script>
 
 <style lang="scss">
 @import './style.scss';
@@ -70,6 +93,7 @@ html,body {
   margin-top: 4rem;
   z-index: 2;
   transition: all 300ms;
+  cursor: pointer;
   &:hover {
     transform: translateY(-5px) scale(1.08);
   }
@@ -99,7 +123,15 @@ html,body {
       animation: shake 250ms linear;
       animation-iteration-count: 2;
     }
+    @include breakpoint($tablet) {
+      margin-left: 0rem;
+      margin-top: .4rem;
+    }
   }
+  @include breakpoint($tablet) {
+      padding-top: .4rem;
+      padding-bottom: .6rem;
+    }
 }
 #junbo {
   background: $dark;

@@ -41,6 +41,11 @@ export default {
   name: 'iOS',
   props: {
     msg: String
+  },
+  data () {
+    return {
+      title: 'QVPN - iOS'
+    }
   }
 }
 </script>
