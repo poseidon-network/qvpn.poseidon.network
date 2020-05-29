@@ -24,7 +24,7 @@
       </div>
       <div class="wrap">
         <h3><span class="number">4</span>Import bulk URL from clipboard to the v2rayN toolbar.</h3>
-        <img src="../assets/windows-3.png" alt="">
+        <img src="../assets/windows-2.png" alt="">
       </div>
       <div class="wrap">
         <h3><span class="number">5</span>Setup Http proxy</h3>
