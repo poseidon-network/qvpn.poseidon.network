@@ -11,9 +11,9 @@
         <h3><span class="number">2</span>Copy Vmess</h3>
         <div class="config">
           <h3>Your Configuration</h3>
-          <div class="input" v-on:click="CopyAction">
+          <div class="input" id="copy-input" v-on:click="Copy">
             <div id="copy">Tab to copy</div>
-            <div class="input-text">"weight" : 1586962875,"title" : "new server","host" : "hk.3qqq.io","file" : "","uuid" : "DF4CC657-6F8A-4F51-B6A7-E61D140D42F8","method" : "auto",</div>
+            <div class="input-text">vmess://eyJwb3J0IjoiMzI0NDMiLCJwcyI6IkRpc25leVBsdXNfVVMiLCJ0bHMiOiJub25lIiwiaWQiOiI1MzFkNTBjMS0zODU1LTQ3MDMtOTRkYi1hNWQyM2Y5ZWU2ZDYiLCJhaWQiOiI2NCIsInYiOiIyIiwiaG9zdCI6IiIsInR5cGUiOiJub25lIiwicGF0aCI6IiIsIm5ldCI6InRjcCIsImFkZCI6ImRpc25leS4zcS52YyJ9</div>
           </div>
         </div>
       </div>
@@ -34,14 +34,12 @@
 import $ from 'jquery'
 
 export default {
-  name: 'CopyAction',
+  name: 'Copy',
   methods: {
-    CopyAction () {
-      $(document).ready(function () {
-        $('#copy').click(function (event) {
-          CopyToClipboard('COPY COPY', true, 'Value copied')
-        })
-      })
+    Copy () {
+      CopyToClipboard('vmess://eyJwb3J0IjoiMzI0NDMiLCJwcyI6IkRpc25leVBsdXNfVVMiLCJ0bHMiOiJub25lIiwiaWQiOiI1MzFkNTBjMS0zODU1LTQ3MDMtOTRkYi1hNWQyM2Y5ZWU2ZDYiLCJhaWQiOiI2NCIsInYiOiIyIiwiaG9zdCI6IiIsInR5cGUiOiJub25lIiwicGF0aCI6IiIsIm5ldCI6InRjcCIsImFkZCI6ImRpc25leS4zcS52YyJ9', true, 'Copied!')
+      $('#copy').html('Copied!')
+      setTimeout(function () { $('#copy').html('Tab to copy') }, 1600)
 
       function CopyToClipboard (value, showNotification, notificationText) {
         var $temp = $('<input>')
@@ -62,12 +60,12 @@ export default {
           notificationTag = $('<div/>', { class: 'copy-notification', text: notificationText })
           $('body').append(notificationTag)
 
-          notificationTag.fadeIn('slow', function () {
+          notificationTag.fadeIn(function () {
             setTimeout(function () {
-              notificationTag.fadeOut('slow', function () {
+              notificationTag.fadeOut(function () {
                 notificationTag.remove()
               })
-            }, 1000)
+            }, 800)
           })
         }
       }
@@ -92,12 +90,9 @@ export default {
       opacity: 1 !important;
     }
   }
-</style>
-
-<style lang="scss" scoped>
 .copy-notification {
   color: #ffffff;
-  background-color: rgba(0,0,0,0.8);
+  background-color: #A966FF;
   padding: 20px;
   border-radius: 30px;
   position: fixed;
@@ -108,5 +103,8 @@ export default {
   margin-left: -85px;
   display: none;
   text-align:center;
+}
+#copy-input {
+  z-index: 9;
 }
 </style>

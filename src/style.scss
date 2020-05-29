@@ -18,6 +18,7 @@ $purple-to-blue: radial-gradient(80.01% 440.45% at 3.16% 0%, #6688FF 0%, #9440FF
 
 $pc: max-width 1000px;
 $tablet: max-width 800px;
+$small: max-width 370px;
 
 $shadow: 0px 5px 4px rgba(148, 148, 148, 0.25);
 
@@ -74,7 +75,19 @@ $shadow: 0px 5px 4px rgba(148, 148, 148, 0.25);
         height: 35px;
         border: 10px solid $light-green;
         background: $mid-green;
-        margin-right: 20px;
+        margin-right: 20px;         
+      }
+      @include breakpoint($tablet) {
+        
+        span {
+          margin-bottom: .3rem;
+          width: 24px;
+          min-width: 24px;
+          height: 24px;
+          font-size: 14px;
+          margin-right: 10px;
+          border: 8px solid $light-green;
+        }
       }
     }
 
@@ -85,9 +98,32 @@ $shadow: 0px 5px 4px rgba(148, 148, 148, 0.25);
       line-height: 24px;
       margin-left: 76px;
       @include breakpoint($tablet) {
-        margin-left: 76px;
+        margin-left: 0px;
+        margin-top: 1rem;
+        padding: 0 1rem;
       }
-      .caution {
+    }
+    .caution {
+      text-align: left;
+      background: rgba($color: #D9E1FF, $alpha: .5);
+      margin-left: 76px;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      margin-bottom: .5rem;
+      border-radius: 5px;
+      &::before {
+        content: '💡';
+        margin-right: .5rem;
+        font-size: 28px;
+        @include breakpoint($tablet) {
+          display: block;
+        }
+      }
+      @include breakpoint($tablet) {
+        margin-left: 0px;
+        width: 90%;
+        margin: auto;
       }
     }
 
@@ -99,10 +135,12 @@ $shadow: 0px 5px 4px rgba(148, 148, 148, 0.25);
       &.s {
         width: 50%;
         @include breakpoint($tablet) {
-          width: 100%;
+          width: 90%;
+          margin: auto;
+          margin-top: 1.2rem;
         }
       }
-      @include breakpoint($tablet) {
+      @include breakpoint($pc) {
         margin-left: 0;
       }
     }
@@ -117,12 +155,27 @@ $shadow: 0px 5px 4px rgba(148, 148, 148, 0.25);
       border-radius: 20px;
       padding: 1.5rem 2rem 2rem 2rem;
       margin-top: 1rem;
-
+      margin-left: 76px;
+      width: 90%;
+      @include breakpoint($pc) {
+        width: 88%;
+        margin-left: 0;
+        width: fit-content;
+      }
+      @include breakpoint($small) {
+        width: fit-content;
+        margin-left: 0;
+        padding: .5rem 1.1rem 1.1rem 1.1rem;
+        margin-top: .5rem;
+      }
       h3 {
         margin: 0;
         text-align: center;
         display: block;
         margin: auto;
+        @include breakpoint($small) {
+          font-size: 15px;
+        }
       }
 
       .input {
@@ -138,17 +191,26 @@ $shadow: 0px 5px 4px rgba(148, 148, 148, 0.25);
         font-weight: 300;
         font-size: 13px;
         text-align: left;
-
+        transition: all 300ms;
+        cursor: pointer;
+        word-break: break-all;
+        line-height: 1.2rem;
+        &:hover {
+          opacity: .8;
+        }
+        @include breakpoint($small) {
+          padding: .6rem 10px;
+          margin-top: 8px;
+        }
         #copy {
           color: #BF8CFF;
           text-align: right;
           margin-top: -.5rem;
-          margin-bottom: .5rem;
           font-size: 14px;
           display: flex;
           align-items: center;
           justify-content: flex-end;
-
+          cursor: pointer;
           &::before {
             content: url('./assets/Copy.svg');
             margin-right: .4rem;

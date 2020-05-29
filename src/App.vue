@@ -114,6 +114,9 @@ html,body {
     margin-top: 1rem;
     z-index: 2;
   }
+  @include breakpoint($small) {
+    padding-bottom: 10rem;
+  }
   .title {
     z-index: 2;
     @include breakpoint($tablet) {
@@ -136,7 +139,6 @@ html,body {
 #app {
   text-align: center;
   color: #2c3e50;
-  max-width: 1440px;
   @include breakpoint($tablet) {
   }
 }
@@ -150,11 +152,15 @@ html,body {
   justify-content: space-around;
   width: 85%;
   max-width: 1440px;
-   h2 {
+  h2 {
     color: white;
     width: 100%;
     margin-bottom: 3rem;
     z-index: 2;
+    @include breakpoint($small) {
+      font-size: 16px;
+      margin-bottom: 1rem;
+    }
   }
   .btn {
     width: 16%;
@@ -184,7 +190,11 @@ html,body {
           opacity: 1;
           @include breakpoint($tablet) {
             left: 5%;
-            transform: scale(.6);
+            transform: scale(.5);
+          }
+          @include breakpoint($small) {
+            left: 5%;
+            transform: scale(.4);
           }
         }
       }
@@ -202,11 +212,27 @@ html,body {
       min-width: 150px;
       padding: 2rem 0rem;
       border-radius: 30px 30px 30px 5px;
+      font-size: 15px;
+    }
+    @include breakpoint($small) {
+      width: 48%;
+      min-width: 80px;
+      padding: 1.2rem 0rem;
+      border-radius: 20px 20px 20px 5px;
+      font-size: 15px;
+      span {
+        transform: scale(.8);
+      }
     }
   }
   @include breakpoint($tablet) {
     width: 90%;
     padding: 30px 0;
+  }
+  @include breakpoint($small) {
+    width: 95%;
+    padding: 30px 0 0px 0;
+    margin-top: -10rem;
   }
 }
 
