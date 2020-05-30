@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import DisneyPlus from '../views/DisneyPlus.vue'
 
 Vue.use(VueRouter)
 
@@ -12,9 +12,9 @@ const routes = [
     }
   },
   {
-    path: '/',
+    path: '/DisneyPlus',
     name: 'DisneyPlus',
-    component: Home
+    component: DisneyPlus
   },
   {
     path: '/MacOS',
