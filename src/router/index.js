@@ -7,7 +7,9 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    redirect: 'DisneyPlus'
+    redirect: to => {
+      window.location.href = 'https://poseidon.network'
+    }
   },
   {
     path: '/',
