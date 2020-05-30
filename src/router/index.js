@@ -7,7 +7,11 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    redirect: 'DisneyPlus'
+  },
+  {
+    path: '/',
+    name: 'DisneyPlus',
     component: Home
   },
   {
