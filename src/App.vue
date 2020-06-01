@@ -119,19 +119,21 @@ html,body {
     padding: .3rem .5rem .4rem .5rem;
     border-radius: 3px;
     margin-left: 1rem;
-    &:hover {
-      animation: shake 250ms linear;
-      animation-iteration-count: 2;
-    }
     @include breakpoint($tablet) {
       margin-left: 0rem;
       margin-top: .4rem;
     }
   }
   @include breakpoint($tablet) {
-      padding-top: .4rem;
-      padding-bottom: .6rem;
+    padding-top: .4rem;
+    padding-bottom: .6rem;
+  }
+  &:hover {
+    .btn {
+      animation: shake 250ms linear;
+      animation-iteration-count: 2;
     }
+  }
 }
 #junbo {
   background: $dark;
