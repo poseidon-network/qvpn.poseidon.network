@@ -11,5 +11,6 @@ deploy:
  skip_cleanup: true
  github_token: $GITHUB_TOKEN
  local_dir: dist
+ fqdn: qvpn.poseidon.network
  on:
    branch: master

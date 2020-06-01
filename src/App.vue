@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <a href="https://github.com/poseidon-network/qlauncher-linux" target="_blank" id="note">
-     💝 Earn rewards by helping others to watch Dinesy+ <div class="btn">Collect your gift 🎁</div>
+     💝 Earn rewards by helping others to watch Disney+ <div class="btn">Collect your gift 🎁</div>
     </a>
     <div id="junbo">
       <img src="./assets/title.svg" alt="" class="title">

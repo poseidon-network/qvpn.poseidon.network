@@ -1,14 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import DisneyPlus from '../views/DisneyPlus.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    redirect: to => {
+      window.location.href = 'https://poseidon.network'
+    }
+  },
+  {
+    path: '/DisneyPlus',
+    name: 'DisneyPlus',
+    component: DisneyPlus
   },
   {
     path: '/MacOS',
