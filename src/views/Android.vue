@@ -5,7 +5,7 @@
     <div class="content">
       <div class="wrap">
         <h3><span class="number">1</span>Download v2rayNG</h3>
-        <p class="info">You can download v2rayNG here: <a href="https://play.google.com/store/apps/details?id=com.v2ray.ang&hl=en" target="_blank">Google play store</a></p>
+        <p class="info">You can download v2rayNG here: <a href="https://play.google.com/store/apps/details?id=com.v2ray.ang&hl=en" target="_blank">Google Play Store</a></p>
       </div>
       <div class="wrap">
         <h3><span class="number">2</span>Save Config QRCode to your album</h3>
@@ -24,8 +24,8 @@
       </div>
       <div>
         <h3><span class="number">5</span>Download Disney+ App</h3>
-        <div class="caution">You will need to have a United States apple account to download the app.</div>
-        <p class="info">Go to <a href="https://play.google.com/store/apps/details?id=com.disney.disneyplus&hl=en_US" target="_blank">Google play store</a> download Disney+ and sign up an account.<br/>If you’d like to take a trial of watching Disney+, our community supports you for Disney + free trial. Come join us!</p>
+        <div class="caution">You will need to have a United States Google Play Account to download the app.</div>
+        <p class="info">Go to <a href="https://play.google.com/store/apps/details?id=com.disney.disneyplus&hl=en_US" target="_blank">Google Play Store</a> download Disney+ and sign up an account.<br/>If you’d like to take a trial of watching Disney+, our community supports you for Disney + free trial. Come join us!</p>
       </div>
       <div class="done"><h4>🎉 ALL DONE! ENJOY.</h4></div>
     </div>

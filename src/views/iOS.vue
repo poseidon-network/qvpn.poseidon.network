@@ -5,7 +5,7 @@
     <div class="content">
       <div class="wrap">
         <h3><span class="number">1</span>Download Shadowrocket</h3>
-        <p class="info">You can download Shadowrocket here: <a href="https://apps.apple.com/tw/app/shadowrocket/id932747118" target="_blank">App store</a></p>
+        <p class="info">You can download Shadowrocket here: <a href="https://apps.apple.com/tw/app/shadowrocket/id932747118" target="_blank">Apple Store</a></p>
       </div>
       <div class="wrap">
         <h3><span class="number">2</span>Save Config QRCode to your album</h3>
@@ -28,8 +28,8 @@
       </div>
       <div class="wrap">
         <h3><span class="number">6</span>Download Disney+ App</h3>
-        <div class="caution">You will need to have a United States apple account to download the app.</div>
-        <p class="info">Go to <a href="https://apps.apple.com/us/app/disney/id1446075923" target="_blank">Apple store</a> download Disney+ and sign up an account.<br/>If you’d like to take a trial of watching Disney+, our community supports you for Disney + free trial. Come join us!</p>
+        <div class="caution">You will need to have a United States Apple Account to download the app.</div>
+        <p class="info">Go to <a href="https://apps.apple.com/us/app/disney/id1446075923" target="_blank">Apple Store</a> download Disney+ and sign up an account.<br/>If you’d like to take a trial of watching Disney+, our community supports you for Disney + free trial. Come join us!</p>
       </div>
       <div class="done"><h4>🎉 ALL DONE! ENJOY.</h4></div>
     </div>

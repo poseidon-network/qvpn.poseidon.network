@@ -12,10 +12,10 @@
     </div>
     <div id="nav">
       <h2>Choose Your Device</h2>
-      <router-link class="btn" data-icon="1" to="/MacOS"><span>MacOS</span></router-link>
-      <router-link class="btn" data-icon="2" to="/Windows"><span>Windows</span></router-link>
-      <router-link class="btn" data-icon="3" to="/iOS"><span>iOS</span></router-link>
-      <router-link class="btn" data-icon="4" to="/android"><span>Android</span></router-link>
+      <router-link class="btn" data-icon="1" to="/DisneyPlus/MacOS"><span>MacOS</span></router-link>
+      <router-link class="btn" data-icon="2" to="/DisneyPlus/Windows"><span>Windows</span></router-link>
+      <router-link class="btn" data-icon="3" to="/DisneyPlus/iOS"><span>iOS</span></router-link>
+      <router-link class="btn" data-icon="4" to="/DisneyPlus/android"><span>Android</span></router-link>
     </div>
     <router-view/>
     <div class="giveaway">
@@ -42,6 +42,7 @@
 import $ from 'jquery'
 import vueSmoothScroll from 'vue2-smooth-scroll'
 import Vue from 'vue'
+
 Vue.use(vueSmoothScroll)
 
 export default {
@@ -58,7 +59,6 @@ export default {
     }
   }
 }
-
 </script>
 
 <style lang="scss">

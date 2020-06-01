@@ -5,10 +5,10 @@
     <div class="content">
       <div class="wrap">
         <h3><span class="number">1</span>Download v2rayU</h3>
-        <p class="info">You can download the v2RayU Client here: <a href="/assets/V2rayU.dmg" target="_blank"> V2rayU.dmg</a></p>
+        <p class="info">You can download the v2RayU Client here: <a href="/assets/V2rayU.dmg" download="V2rayU.dmg" target="_blank"> V2rayU.dmg</a></p>
       </div>
       <div class="wrap">
-        <h3><span class="number">2</span>Copy Vmess</h3>
+        <h3><span class="number">2</span>Copy Configuration</h3>
         <div class="config">
           <h3>Your Configuration</h3>
           <div class="input" id="copy-input" v-on:click="Copy">
@@ -18,12 +18,12 @@
         </div>
       </div>
       <div class="wrap">
-        <h3><span class="number">3</span>Click “Import Server From Pasteboard” via menu bar's v2rayU icon</h3>
+        <h3><span class="number">3</span>Click “Import Server From Pasteboard” via v2rayU icon in the menu bar</h3>
         <img src="../assets/macos-1.gif" alt="">
       </div>
       <div class="wrap">
         <h3><span class="number">4</span>Sign up your Disney+ Account</h3>
-        <p class="info">Go to <a href="https://www.disneyplus.com/home" target="_blank">Disney+ Account</a> and sign up account.<br/>You can join our community to try a Disney+ free trail.</p>
+        <p class="info">Go to <a href="https://www.disneyplus.com/home" target="_blank">Disney+</a> and sign up an account.<br/>If you’d like to take a trial of watching Disney+, our community supports you for Disney + free trial. Come join us!</p>
       </div>
       <div class="done"><h4>🎉 ALL DONE! ENJOY.</h4></div>
     </div>

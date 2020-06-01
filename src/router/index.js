@@ -1,15 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import DisneyPlus from '../views/DisneyPlus.vue'
+import $ from 'jquery'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    redirect: to => {
-      window.location.href = 'https://poseidon.network'
-    }
+    redirect: '/DisneyPlus'
   },
   {
     path: '/DisneyPlus',
@@ -17,25 +16,27 @@ const routes = [
     component: DisneyPlus
   },
   {
-    path: '/MacOS',
+    path: '/DisneyPlus/MacOS',
     name: 'MacOS',
     component: () => import(/* webpackChunkName: "about" */ '../views/Mac.vue')
   },
   {
-    path: '/Windows',
+    path: '/DisneyPlus/Windows',
     name: 'Windows',
     // component: Home
-    component: () => import(/* webpackChunkName: "about" */ '../views/Windows.vue')
+    component: () =>
+      import(/* webpackChunkName: "about" */ '../views/Windows.vue')
   },
   {
-    path: '/iOS',
+    path: '/DisneyPlus/iOS',
     name: 'iOS',
     component: () => import(/* webpackChunkName: "about" */ '../views/iOS.vue')
   },
   {
-    path: '/Android',
+    path: '/DisneyPlus/Android',
     name: 'Android',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Android.vue')
+    component: () =>
+      import(/* webpackChunkName: "about" */ '../views/Android.vue')
   }
   // {
   //   path: '/Windows',
@@ -50,6 +51,12 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   routes
+})
+
+router.afterEach((to, from, next) => {
+  $('html, body').animate({
+    scrollTop: $('#nav').offset().top
+  }, 600)
 })
 
 export default router
