@@ -5,7 +5,7 @@
     <div class="content">
       <div class="wrap">
         <h3><span class="number">1</span>Download v2rayU</h3>
-        <p class="info">You can download the v2RayU Client here: <a href="" target="_blank"> V2rayU.dmg</a></p>
+        <p class="info">You can download the v2RayU Client here: <a href="/assets/V2rayU.dmg" target="_blank"> V2rayU.dmg</a></p>
       </div>
       <div class="wrap">
         <h3><span class="number">2</span>Copy Vmess</h3>

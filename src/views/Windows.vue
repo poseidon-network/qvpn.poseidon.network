@@ -5,7 +5,7 @@
     <div class="content">
       <div class="wrap">
         <h3><span class="number">1</span>Download v2rayN</h3>
-        <p class="info">You can download the v2rayN here: <a href="" target="_blank"> v2rayN.zip</a></p>
+        <p class="info">You can download the v2rayN here: <a href="/assets/v2rayN.zip" target="_blank"> v2rayN.zip</a></p>
       </div>
       <div class="wrap">
         <h3><span class="number">2</span>Install v2rayN</h3>
