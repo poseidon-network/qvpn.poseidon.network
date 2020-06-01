@@ -45,10 +45,45 @@
 </template>
 
 <script>
+import $ from 'jquery'
+
 export default {
-  name: 'Winodws',
-  props: {
-    msg: String
+  name: 'Copy',
+  methods: {
+    Copy () {
+      CopyToClipboard('vmess://eyJwb3J0IjoiMzI0NDMiLCJwcyI6IkRpc25leVBsdXNfVVMiLCJ0bHMiOiJub25lIiwiaWQiOiI1MzFkNTBjMS0zODU1LTQ3MDMtOTRkYi1hNWQyM2Y5ZWU2ZDYiLCJhaWQiOiI2NCIsInYiOiIyIiwiaG9zdCI6IiIsInR5cGUiOiJub25lIiwicGF0aCI6IiIsIm5ldCI6InRjcCIsImFkZCI6ImRpc25leS4zcS52YyJ9', true, 'Copied!')
+      $('#copy').html('Copied!')
+      setTimeout(function () { $('#copy').html('Tab to copy') }, 1600)
+
+      function CopyToClipboard (value, showNotification, notificationText) {
+        var $temp = $('<input>')
+        $('body').append($temp)
+        $temp.val(value).select()
+        document.execCommand('copy')
+        $temp.remove()
+
+        if (typeof showNotification === 'undefined') {
+          showNotification = true
+        }
+        if (typeof notificationText === 'undefined') {
+          notificationText = 'Copied to clipboard'
+        }
+
+        var notificationTag = $('div.copy-notification')
+        if (showNotification && notificationTag.length === 0) {
+          notificationTag = $('<div/>', { class: 'copy-notification', text: notificationText })
+          $('body').append(notificationTag)
+
+          notificationTag.fadeIn(function () {
+            setTimeout(function () {
+              notificationTag.fadeOut(function () {
+                notificationTag.remove()
+              })
+            }, 800)
+          })
+        }
+      }
+    }
   }
 }
 </script>
