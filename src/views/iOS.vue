@@ -30,6 +30,7 @@
         <h3><span class="number">6</span>Download Disney+ App</h3>
         <div class="caution">You will need to have a United States Apple Account to download the app.</div>
         <p class="info">Go to <a href="https://apps.apple.com/us/app/disney/id1446075923" target="_blank">Apple Store</a> download Disney+ and sign up an account.<br/>If you’d like to take a trial of watching Disney+, our community supports you for Disney + free trial. Come join us!</p>
+        <img class="s" src="../assets/ios-3.png" alt="">
       </div>
       <div class="done"><h4>🎉 ALL DONE! ENJOY.</h4></div>
     </div>
