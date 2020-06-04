@@ -38,6 +38,7 @@
       <div class="wrap">
         <h3><span class="number">7</span>Sign up your Disney+ Account</h3>
         <p class="info">Go to <a href="https://www.disneyplus.com/home" target="_blank">Disney+ Account</a> and sign up account.<br/>If you’d like to take a trial of watching Disney+, our community supports you for Disney + free trial. Come join us!</p>
+        <img src="../assets/windows-5.png" alt="">
       </div>
       <div class="done"><h4>🎉 ALL DONE! ENJOY.</h4></div>
     </div>
