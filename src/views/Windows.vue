@@ -5,7 +5,7 @@
     <div class="content">
       <div class="wrap">
         <h3><span class="number">1</span>Download v2rayN</h3>
-        <p class="info">You can download the v2rayN here: <a href="https://github.com/2dust/v2rayN/releases/download/3.18/v2rayN.zip" target="_blank"> v2rayN.zip</a></p>
+        <p class="info">You can download the v2rayN here: <a href="https://github.com/2dust/v2rayN/releases/download/3.19/v2rayN-Core.zip" target="_blank"> v2rayN.zip</a></p>
         <br><div class="caution">Make sure your v2rayN is up to date.</div>
       </div>
       <div class="wrap">
