@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <h3>👆🏻 Choose a device </h3>
-    <p>Give QVPN a world and feel the MAGIC.</p>
+    <h3>👆🏻 Select a device </h3>
+    <p>Let QVPN show you a whole new world.</p>
     <img src="../assets/disney-logo-dark.svg" alt="">
   </div>
 </template>
