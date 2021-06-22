@@ -1,3 +1,3 @@
 # /bin/bash
 
-echo "vpn.poseidon.network" > ./out/CNAME
+echo "vpn.poseidon.network" > ./dist/CNAME
