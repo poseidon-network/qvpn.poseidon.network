@@ -25,14 +25,15 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Install dependencies
+      - name: Install dependencies 🪛
         continue-on-error: true
         run: |
           npm install
           
-      # - name: Lint
-      #   run: |
-      #     npm run lint
+      - name: Lint ✏️
+        continue-on-error: true
+        run: |
+          npm run lint
 
       - name: Build and Pre Deploy 🔧
         run: |
