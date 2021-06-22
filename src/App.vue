@@ -34,7 +34,7 @@
       </div>
     </div>
     <footer>
-      Powered by <a target="_blank" href="">Poseidon-Network</a>
+      Powered by <a target="_blank" href="https://poseidon.network/">Poseidon-Network</a>
     </footer>
   </div>
 </template>
