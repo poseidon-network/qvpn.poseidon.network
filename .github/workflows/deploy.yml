@@ -30,9 +30,9 @@ jobs:
         run: |
           npm install
           
-      - name: Lint
-        run: |
-          npm run lint
+      # - name: Lint
+      #   run: |
+      #     npm run lint
 
       - name: Build and Pre Deploy 🔧
         run: |
